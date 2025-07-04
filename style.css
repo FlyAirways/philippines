@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: url('air2.jpg') no-repeat center center/cover;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html{
+        scroll-padding-top: 9rm;
+        scroll-behavior: smooth;
+}
+
+
+header {
+  background-color: #005f96;
+  color: white;
+  padding: 1rem ;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  height: 50px;
+  margin-right: 0;
+}
+
+h1 {
+  object-fit: contain;
+  font-size: 20px;
+  
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.background {
+  background: url('/air2.webp') no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.tracking-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="text"] {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #005f96;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003d80;
+}
+
+#trackingResult {
+  margin-top: 1.5rem;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+footer {
+  text-align: center;
+  padding: 0.4rem;
+  background-color: #b3b3b3;
+  font-size: 0.9rem;
+}
+
+.contact{
+  margin-top: 3rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
+.contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact a {
+  color: #000000;
+  text-decoration: underline;
+}

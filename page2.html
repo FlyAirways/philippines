@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipment Tracking</title>
+  <link rel="stylesheet" href="page2.css">
+    <body>
+<section class="sectionon">
+  <div class="header">
+    <div class="logo">
+  <img src="lo.png" alt="Logo" class="logo-img">
+  <span>FLY AIRWAYS DELIVERY</span>
+</div>
+    <div class="tracking">
+      <div>Tarcking Number</div>
+      <div class="tracking-number">FD-183B27FB97</div>
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <img src="phil.png" alt="map">
+</section>
+
+<section class="sectiontwo">
+  <div class="timeline">
+    <div class="event">
+      <div class="dot green"></div>
+      <div class="date">Tue, 1 Oct 2024</div>
+      <div>Shipment Ready To Be Delivered to Philippines</div>
+    </div>
+    <div class="event">
+      <div class="dot orange"></div>
+      <div class="date">Wed, 2 Oct 2024</div>
+      <div>Shipment has been recieved at FLY WAREHOUSE</div>
+    </div>
+    <div class="event">
+      <div class="dot gray"></div>
+      <div class="date">Thur, 3 Oct, 2025</div>
+      <div>Item Leaving Mexico</div>
+    </div>
+
+        <div class="event">
+      <div class="dot red"></div>
+      <div class="date">Fri, 4 Oct, 2024</div>
+      <div>Package on its way to Philippines</div>
+    </div>
+
+    <div class="event">
+      <div class="dot blue"></div>
+      <div class="date">Sun, 6 Oct, 2024</div>
+      <div>Item Arrived At Ninoy Aquino International Airport, Philippines</div>
+    </div>
+  </div>
+  </section>
+
+  <section class="sectionthree">
+    <div class="button">
+    <a href="details.html"><button type="butto">View package details</button></a>
+  
+  </section>
+
+  <div class="barcode">
+    <img src="https://barcode.tec-it.com/barcode.ashx?data=2601729756&code=Code128&translate-esc=on" alt="Barcode">
+  </div>
+
+</body>
+</html>
+
+
+    <script>
+const params = new URLSearchParams(window.location.search);
+const code = params.get("track");
+
+if (code) {
+document.getElementById("trackingInfo").textContent = `Your tracking number is: ${code}`;
+} else {
+document.getElementById("trackingInfo").textContent = "No tracking number provided.";
+}
+</script>
+
+  </div>
+</body>
+</html>
